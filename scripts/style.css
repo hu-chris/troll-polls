@@ -1,0 +1,82 @@
+body {
+    padding-top: 70px;
+}
+
+.title {
+    color: rgb(76, 192, 76);
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Bree Serif', serif;
+    font-weight: 5;
+}
+
+.subtitle {
+    color: rgb(76, 192, 76);
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Bree Serif', serif;
+    font-weight: 2;
+    margin-top: -30px;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+}
+
+.nav-link {
+    color: #858C95
+}
+
+.bodytitle {
+    color: rgb(7, 65, 7);
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.polls div[class^="col"] {
+	border: 15px solid white;
+	background: rgb(223, 219, 219);
+	text-align: center;
+	padding-top: 8px;
+    padding-bottom: 8px;
+    height: 300px;
+}
+
+.polltitle {
+    font-size: 3em;
+    font-family: 'Bree Serif', serif;
+    text-align: left;
+    line-height: 40px;
+    height: 85px;
+    max-height: 85px;
+}
+
+.polluser {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.pollvotes {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.viewwrapper {
+    border-top: 1px solid;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.viewpoll {
+    float: left;
+    background-color: rgb(76, 192, 76);
+    border: none;
+}
+
+.viewpoll:hover {
+    background-color: rgb(14, 122, 14);
+    border: none;
+}

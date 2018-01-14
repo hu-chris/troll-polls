@@ -2,20 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Node Sample App</title>
+    <title>Troll Poll</title>
 
     <!-- CSS -->
     <!-- load bootstrap and our own personal stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <a class="nav-link" href="#">Lorem</a>
-        <a class="nav-link" href="#">Ipsum</a>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background: rgb(135, 235, 135)">
+        <a class="navbar-brand" href="#"><img class="logo" src="https://i.imgur.com/JoWjQsJ.png"></a>
+        <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+            <form class="form-inline" role="search">
+                <input type="text" placeholder="Find a poll..." class="form-control">
+                 <button type="submit" class="btn btn-secondary">Search</button>
+            </form>
+        <a class="nav-link" href="#">Log In</a>
+        <a class="nav-link" href="#">Register</a>
+        </div>
     </nav>
+    <div class="container-fluid title">
+        Troll Poll
+    </div>
+    <div class="container-fluid subtitle">
+        Ask people some bullshit
+    </div>
+    <div class="container-fluid bodytitle">
+        Recent Polls:
+    </div>
+    <div class="container-fluid">
+        <div class="polls">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="polltitle" id="poll1title">Poll 1</div>
+                    <div class="polluser" id="poll1user"><i>By User1</i></div>
+                    <div class="pollvotes" id="poll1votes">75 Votes</div>
+                    <div class="viewwrapper">
+                        <input class="btn btn-primary viewpoll" type="submit" value="View Poll">
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+            <div class="polls">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
 
+		
+            
 <!-- jQuery library -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 

@@ -3,10 +3,13 @@ app = express();
 
 var port = process.env.PORT || 8080
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/views'));
+//Store all HTML files in view folder.
+app.use(express.static(__dirname + '/scripts'));
+//Store all JS and CSS in Scripts folder.
 
 app.get('/', function(req, res) {
-    res.end('jesus fucking christ this is stupid');
+    res.sendFile('index.html');
 })
 
 app.listen(port, function(){
