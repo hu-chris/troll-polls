@@ -1,0 +1,26 @@
+extends homelayout
+
+block content
+  div(class='loginwrapper')
+    div(class='login')
+      p(class='regtitle') Log In
+      p(class='regsubtitle') <i>Enter your credentials below to log in</i>
+    div(class='login-field-wrapper')
+      form(action='/login' name='loginform' method='post' onsubmit="return validateLogin()")
+        p(class='regheads') Username
+        if username
+          - var value = username;
+          input(type="text" id="login-username" placeholder="Username" class="regfields" name='username' value=value)
+        else
+          input(type="text" id="login-username" placeholder="Username" class="regfields" name='username')
+        p(class='reg-error' id='username-error')
+        p(class='regheads') Password
+        input(type='password' id="login-password" placeholder="Password" class="regfields" name='password')
+        if error
+          p(class='reg-error' id='password-error') #{error}
+        else
+          p(class='reg-error' id='password-error')
+        input(class='btn btn-secondary regbutton' type='submit' value='Log In')
+    div(class='noaccount')
+        a(href='/register' class='noaccount') Don't have an account? Sign up now!
+  script(src='loginpage.js')

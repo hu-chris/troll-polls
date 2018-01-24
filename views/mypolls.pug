@@ -1,0 +1,15 @@
+extends homelayout
+
+block content
+  div(class='contenttitle text-center') My Polls
+  div(class='container-fluid')
+    div(class='polls')
+      div(class='row')
+        each poll in poll_list
+          div(class='col-sm-3')
+            div(class='polltitle') #{poll.title}
+            div(class='polluser') <i>by #{poll.user}</i>
+            div(class='pollvotes') #{poll.total_votes} votes
+            div(class='viewwrapper')
+              - var pollid = poll._id;
+              a(class='btn btn-primary viewpoll' href='polls?'+pollid) View Poll

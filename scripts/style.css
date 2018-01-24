@@ -1,5 +1,26 @@
+h1 {
+    color: red;
+}
+
 body {
     padding-top: 70px;
+}
+
+input {
+    text-indent: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.nav-link {
+    color: rgb(7, 65, 7) !important;
+    font-weight: bold !important;
+}
+
+.btn:hover {
+    cursor: pointer !important;
 }
 
 .title {
@@ -19,6 +40,34 @@ body {
     margin-top: -30px;
 }
 
+.tester {
+    width: 100%;
+    line-height: 240px;
+}
+
+#makepoll {
+    width: 60%;
+    background-color: rgb(76, 192, 76);
+    border: none;
+}
+
+#makepoll:hover {
+    background-color: rgb(14, 122, 14);
+    border: none;
+}
+
+#allpollsbutton {
+    width: 9%;
+    background-color: rgb(76, 192, 76);
+    margin-left: 15px;
+    border: none;
+}
+
+#allpollsbutton:hover {
+    background-color: rgb(14, 122, 14);
+    border: none;
+}
+
 .logo {
     height: 55px;
     width: auto;
@@ -28,11 +77,24 @@ body {
     color: #858C95
 }
 
-.bodytitle {
+.contenttitle {
     color: rgb(7, 65, 7);
     font-size: 1.5em;
     text-align: center;
+    font-size: 2em;
+    font-weight: bold;
     padding-top: 35px;
+}
+
+.examplepoll {
+    border: 15px solid white;
+	background: rgb(223, 219, 219);
+	text-align: center;
+	padding-top: 8px;
+    padding-bottom: 8px;
+    height: 300px;
+    width: 25%;
+    margin: 0 auto;
 }
 
 .polls div[class^="col"] {
@@ -45,23 +107,28 @@ body {
 }
 
 .polltitle {
-    font-size: 3em;
+    font-size: 2.2em;
     font-family: 'Bree Serif', serif;
     text-align: left;
     line-height: 40px;
     height: 85px;
     max-height: 85px;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .polluser {
     text-align: left;
-    padding-top: 10px;
-    font-size: 1.5em;
+    padding-top: 15px;
+    font-size: 1.3em;
+    color: rgb(87, 83, 83)
 }
 
 .pollvotes {
     text-align: left;
-    padding-top: 20px;
+    padding-top: 5px;
+    font-size: 1.1em;
+    color: rgb(87, 83, 83)
 }
 
 .viewwrapper {
@@ -72,6 +139,8 @@ body {
 
 .viewpoll {
     float: left;
+    padding-left: 17px;
+    padding-right: 32px;
     background-color: rgb(76, 192, 76);
     border: none;
 }
@@ -79,4 +148,364 @@ body {
 .viewpoll:hover {
     background-color: rgb(14, 122, 14);
     border: none;
+}
+
+/* registration page css  */
+
+.regwrapper {
+    border: 1px solid;
+    height: 545px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.signup {
+    height: 110px;
+}
+
+.regtitle {
+    font-size: 1.2em;
+    font-family: 'Bree Serif', serif;
+    color: rgb(104, 100, 100);
+    margin-left: 7%;
+    padding-top: 15px;
+}
+
+.regsubtitle {
+    font-size: .8em;
+    color: rgb(133, 126, 126);
+    margin-left: 7%;
+}
+
+.reg-field-wrapper {
+    height: 435px;
+    background-color: rgb(238, 235, 235);
+    border-bottom: 1px solid;
+}
+
+.regheads {
+    margin-left: 10%;
+    padding-top: 10px;
+}
+
+.regfields {
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+.regbutton {
+    background-color: rgb(76, 192, 76);
+    border: none;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.regbutton:hover {
+    background-color: rgb(14, 122, 14);
+    border: none; 
+}
+
+.reg-error {
+    color: red;
+    font-size: .7em;
+    margin-left: 10%;
+    height: 10px;
+}
+
+/* login page css */
+
+.loginwrapper {
+    border: 1px solid;
+    height: 395px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.login {
+    height: 110px;
+}
+
+.login-field-wrapper {
+    height: 285px;
+    background-color: rgb(238, 235, 235);
+    border-bottom: 1px solid;
+}
+
+.noaccount {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* create poll page css */
+
+#pollform {
+    margin-top: 20px;
+}
+
+.createwrapper {
+    width: 90%;
+    height: 820px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid;
+    margin-bottom: 100px;
+}
+
+.createheader {
+    height: 65px;
+    font-size: 2em;
+    font-family: 'Bree Serif', serif;
+    color: rgb(104, 100, 100);
+    margin-left: 4.5%;
+    padding-top: 15px;
+
+}
+
+.createfieldwrapper {
+    background-color: rgb(238, 235, 235);
+    height: 735px;
+    border-bottom: 1px solid;
+}
+
+.createheader {
+    font-size: 2.2em;
+    font-family: 'Bree Serif', serif;
+}
+
+.createtitle {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-left: 6%;
+}
+
+
+.createfields {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+}
+
+.createheads {
+    margin-left: 6%;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.create-error {
+    color: red;
+    font-size: 1em;
+    margin-left: 6%;
+    margin-top: -5px;
+    height: 10px;
+}
+
+#add-an-option {
+    margin-left: 6%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#add-an-option:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.createbutton {
+    background-color: rgb(76, 192, 76);
+    border: none;
+    margin-left: 6%;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.createbutton:hover {
+    background-color: rgb(14, 122, 14);
+    border: none; 
+}
+
+.created {
+    margin-top: 35px;
+    font-size: 2.2em;
+    font-family: 'Bree Serif', serif;
+}
+
+.createdbutton {
+    background-color: rgb(76, 192, 76);
+    border: none;
+    margin-top: 20px;
+    width: 15%;
+}
+
+.createdbutton:hover {
+    background-color: rgb(14, 122, 14);
+    border: none; 
+}
+
+#returnbutton {
+    margin-right: 15px;
+}
+
+/* View Poll css */
+
+.viewtitle {
+    height: 110px;
+    margin-top: 60px !important;
+    color: rgb(7, 65, 7);
+    line-height: 90px;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.viewcontent {
+    background-color: rgb(238, 235, 235);
+    height: 485px;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.option {
+    margin-left: 8%;
+    margin-right: 3%;
+}
+
+#left {
+    float: left;
+    width: 50%;
+    margin-top: 2%;
+}
+
+#right {
+    float: right;
+    width: 50%;
+}
+
+.optionlabel {
+    display: block;
+    font-size: 1.3em;
+    margin-top: 13px;
+}
+
+.votebutton {
+    background-color: rgb(76, 192, 76);
+    border: none;
+    margin-left: 8%;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.votebutton:hover {
+    background-color: rgb(14, 122, 14);
+    border: none; 
+}
+
+.sharebutton {
+    background-color: rgb(76, 192, 76);
+    border: none;
+    margin-left: 1%;
+    margin-top: 20px;
+    width: 25%;
+}
+
+.sharebutton:hover {
+    background-color: rgb(14, 122, 14);
+    border: none; 
+}
+
+
+.delete {
+    display: block;
+    background-color: rgb(219, 68, 68);
+    border: none;
+    width: 15%;
+    height: 30px;
+    line-height: 15px;
+    margin-top: -13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delete:hover {
+    border: none;
+    background-color: rgb(146, 26, 26);
+}
+
+#urlfield {
+    margin-left: 8%;
+    margin-top: 1%;
+    width: 66%;
+    display: none;
+}
+
+#urlcopied {
+    margin-left: 1%;
+    display: none;
+    color: rgb(3, 3, 126);
+    font-weight: bold;
+    font-size: .8em;
+}
+
+#add-new-option {
+    margin-left: 8%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#add-new-option:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#new-option {
+    display: inline-block;
+    margin-left: 8%;
+    width: 66%;
+    display: none;
+}
+
+#add-option {
+    font-size: .7em;
+    margin-left: 1%;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.add-error {
+    color: red;
+    font-size: .8em;
+    margin-left: 8%;
+    margin-top: -5px;
+    height: 10px;
+}
+
+.shareanon {
+    background-color: rgb(76, 192, 76);
+    border: none;
+    margin-left: 8%;
+    margin-top: 20px;
+    width: 66%;
+}
+
+.shareanon:hover {
+    background-color: rgb(14, 122, 14);
+    border: none; 
 }

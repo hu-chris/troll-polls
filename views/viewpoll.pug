@@ -1,0 +1,33 @@
+extends homelayout
+
+block content
+    div(class='viewtitle text-center') #{viewpoll[0].title}
+        if userid === viewpoll[0].userid
+            - var pollquery = pollid;
+            a(href='/delete?'+pollquery class='btn btn-primary delete text-center') Delete
+    div(class='viewcontent')
+        div(id='left')
+            - var pollquery = pollid;
+            form(action='/vote?' + pollid name='voteform' method='post' id='voteform')
+                div(id='vote-options')
+                    each option in option_list
+                        label(class='optionlabel')
+                            input(type='radio' class='option' name='optiongroup' value=option required)
+                            | #{option}
+                if userid
+                    div
+                        div(id='add-new-option') <strong>+ Add another option</strong>
+                        input(type='text' id='new-option')
+                        div(class='btn btn-primary' id='add-option') Add
+                        div(class='add-error' id='add-error')
+                    input(class='btn btn-primary votebutton' type='submit' value='Vote Now')
+                    div(class='btn btn-primary sharebutton' id='share') Share
+                else 
+                    div(class='btn btn-primary shareanon' id='share') Share
+                input(id='urlfield' value='') 
+                div(id='urlcopied') copied to clipboard!
+        div(id='right')
+    script(type="text/javascript" src="https://www.gstatic.com/charts/loader.js")
+    script(type='text/javascript').
+        var local_data =!{JSON.stringify(viewpoll)};
+    script(src='viewpoll.js')

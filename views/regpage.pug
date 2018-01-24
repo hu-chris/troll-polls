@@ -1,0 +1,23 @@
+extends homelayout
+
+block content
+    div(class='regwrapper')
+      div(class='signup')
+        p(class='regtitle') Sign Up Now
+        p(class='regsubtitle') <i>Complete the form below to get instant access</i>
+      div(class='reg-field-wrapper')
+        form(action='/register' name='regform' method='post' onsubmit='return validateReg();')
+            p(class='regheads') Username
+            input(type="text" id="reg-username" placeholder="Username" class="regfields" name="username" onkeyup="checkUsers()")
+            div(class='reg-error' id='username-error') 
+            p(class='regheads') Email
+            input(type="text" id="reg-email" placeholder="Enter email address" class="regfields" name="email" onkeyup="checkEmail()")
+            div(class='reg-error' id='email-error') 
+            p(class='regheads') Password
+            input(type="password" id="reg-password" placeholder="Password" class="regfields" name="password" onkeyup="clearPassError()")
+            div(class='reg-error' id='password-error') 
+            p(class='regheads') Confirm Password
+            input(type="password" id="reg-confirm-password" placeholder="Confirm password" class="regfields" name = "confirm_password" onkeyup="clearConfirmPassError")
+            div(class='reg-error' id='confirm-password-error') 
+            input(class='btn btn-secondary regbutton' type='submit' value='Register')
+        

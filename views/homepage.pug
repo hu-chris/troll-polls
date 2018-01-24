@@ -1,0 +1,25 @@
+extends homelayout
+
+block content
+  div(class='container-fluid title') Troll Poll
+  div(class='container-fluid subtitle') What do you think?
+  div(class='container-fluid')
+    div(class='examplepoll')
+      div(class='row')
+        div(class='text-center tester')
+          a(href='/create' class='btn btn-primary' id='makepoll') <strong>+</strong> Create a Poll
+  div(class='container-fluid contenttitle') Recent Polls
+    a(href='/all' class='btn btn-primary' id='allpollsbutton') View All <strong>></strong>
+  div(class='container-fluid')
+    div(class='polls')
+      div(class='row')
+        each poll in poll_list
+          div(class='col-sm-3')
+            div(class='polltitle') #{poll.title}
+            div(class='polluser') <i>by #{poll.user}</i>
+            div(class='pollvotes') #{poll.total_votes} votes
+            div(class='viewwrapper')
+            - var pollid = poll._id;
+              a(class='btn btn-primary viewpoll' href='polls?'+pollid) View Poll
+
+          

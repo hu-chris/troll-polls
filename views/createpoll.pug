@@ -1,0 +1,19 @@
+extends homelayout
+
+block content
+    div(class='createwrapper')
+        div(class='createheader') Create a Poll
+        div(class='createfieldwrapper')
+            form(action='/create' name='pollform' id='pollform' method='post' onsubmit='return validatePoll()')
+                p(class='createheads') <strong>Title</strong>
+                input(type='text' class='createtitle' id='polltitle' name='title' maxlength = 40)
+                p(class='create-error' id='title-error') 
+                p(class='createheads') <strong>Options</strong> <i>(max 8)</i>
+                div(id='optioncontainer')
+                    input(type='text' class='createfields' id='polloption1' name='option1' maxlength='25')
+                    p(class='create-error' id='option1-error') 
+                    input(type='text' class='createfields' id='polloption2' name='option2' maxlength='25')
+                    p(class='create-error' id='option2-error') 
+                div(id='add-an-option') <strong>+ Add another option</strong>
+                input(class='btn btn-secondary createbutton' type='submit' value='Create Poll')
+    script(src='createpoll.js')
